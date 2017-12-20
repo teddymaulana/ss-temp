@@ -1,0 +1,76 @@
+
+<div class="wrapper signup" ng-init="setBackground(false); setHeader('applicant');">
+	<div class="ui grid computer mobile tablet only">
+	 	<div class="sixteen wide centered column" style="padding: 0">
+	 		<div class="ui fluid steps mag-steps">
+	 			
+	 		</div>
+	 	</div>
+	 </div>
+	 <div class="ui grid mobile tablet only mag-steps">
+	 	
+	 </div>
+	 <div class="ui grid">
+	 	<div class="row">
+	 		<div class="fifteen wide mobile fifteen wide tablet sixteen wide computer centered column">
+	 			<div class="ui segments mag-segments">
+	 				<div class="ui segment top mag-segment">
+	 					<div class="ui doubling stackable two column grid aligned center centered">
+	 						
+	 						<div class="ten wide column">
+	 							<div class="ui form mag-form ">
+	 								<div class="form-title">
+	 									<h1 class="title">Create New Account</h1>
+	 								</div>
+	 								<form name="registrationForm" >
+	 									<div class="fields">
+	 										
+	 										<div class="sixteen wide required field" ng-class="{'error': registrationForm.name.$error && submitted && !registrationForm.name.$valid}">
+												<label>BUSINESS NAME</label>
+												<input type="text" placeholder="e.g Kozy Backpack" ng-model="business.name" name="name" required> 
+												<div ng-messages="registrationForm.name.$error" class="active error-msg" ng-show="submitted && !registrationForm.name.$valid">
+													<div ng-message="required">You did not enter a field</div>
+												</div>
+											</div>
+	 									</div>
+	 									<div class="fields">
+	 										<div class="sixteen wide required field" ng-class="{'error': registrationForm.email.$error && submitted && !registrationForm.email.$valid}">
+											<label>EMAIL</label>
+											<input class="error" type="email" placeholder="e.g kevinhopkins@email.com" name="email" ng-model="business.email" required ng-pattern='/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/' ng-change="removeValidate()">
+											<div ng-messages="registrationForm.email.$error" class="active error-msg" ng-show="submitted && !registrationForm.email.$valid">
+												<div ng-message="required" ng-show="registrationForm.email.$error.required">You did not enter a field</div>
+												<div ng-message="pattern" ng-show="registrationForm.email.$error.pattern">Please add a valid email.</div>
+												<div ng-message="emailTaken" ng-show="registrationForm.email.$error.emailTaken">Email has already been taken</div> 
+											</div>
+										</div>
+	 									</div>
+	 									<div class="fields">
+	 										<div class="sixteen wide required field" ng-class="{'error': registrationForm.password.$error && submitted && !registrationForm.password.$valid}">
+												<label>CREATE PASSWORD</label>
+												<input type="password" placeholder="Your super magic password" ng-model="business.userPassword" name="password" required ng-minlength="6" ng-pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/" ng-change="removeValidate()"> 
+												<input type="hidden" ng-model="business.createUser">
+												<input type="hidden" ng-model="business.defaultSubdomainName">
+												<input type="hidden" ng-model="business.device">
+												<input type="hidden" ng-model="business.existingWeb">
+												<small style="opacity: 0.8">*Password should have minimum 6 characters and have 1 number and 1 capital letter.</small>
+												<div ng-messages="registrationForm.password.$error" class="active error-msg" ng-show="submitted && !registrationForm.password.$valid">
+													<div ng-message="required" ng-show="registrationForm.password.$error.required">You did not enter a field</div>
+													<div ng-message="minlength" ng-show="registrationForm.password.$error.minlength">Minimum password is 6</div>
+													<div ng-message="pattern">Password should have minimum 1 number and 1 Capital letter.</div>
+												</div>
+											</div>
+	 									</div>
+	 								</form>
+	 							</div>
+	 						</div>
+	 					</div>
+	 				</div>
+	 				<div class="ui right aligned segment bottom mag-segment">
+	 					<button class="ui button mag-button" ng-click="go('/step-1')">Previous</button>
+						<button ng-class="{'disabled':  processing && registrationForm.$valid}" class="ui primary button mag-button" ng-click="submit()">{{processing ? "Saving..." : "Next Step"}}</button>
+	 				</div>
+	 			</div>
+	 		</div>
+	 	</div>
+	 </div>
+</div>

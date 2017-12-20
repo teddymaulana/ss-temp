@@ -1,0 +1,66 @@
+<!doctype html>
+<html ng-app="promo-selfserve">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/proxima-nova.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/promo-magic.css">
+  <base href="/">
+  <link rel="stylesheet" type="text/css" href="assets/css/promo-magic-pages.css">
+  
+  <title ng-bind="ngMeta.title"></title>   
+  <meta name="description" content="{{ngMeta.description}}" />
+  <!-- facebook open graph -->
+  <meta property="og:title" content="{{ngMeta['og:title']}}"/>
+  <meta property="og:site_name" content="{{ngMeta['og:site_name']}}"/>
+  <meta property="og:description" content="{{ngMeta.description}}"/>
+  <meta property="og:image" content="{{ngMeta['og:image']}}">
+  <meta property="og:url" content="{{ngMeta['og:url']}}">
+
+  <!-- Twitter Open Graph-->
+  <meta name="twitter:card" content="{{ngMeta['twitter:card']}}" />
+  <meta name="twitter:title" content="{{ngMeta['twitter:title']}}" />
+  <meta name="twitter:description" content="{{ngMeta['twitter:description']}}" />
+  <meta name="twitter:url" content="{{ngMeta['twitter:url']}}" />
+  <meta name="twitter:image" content="{{ngMeta['twitter:image']}}" />
+</head>
+<body head-menu-func scroll-handle>
+<div class="muli-font-page" ng-class="{'bg-white': whiteBackground}">
+  <menu-list ng-show="!showApplicantHeader"></menu-list>
+  <applicant-header ng-show="showApplicantHeader"></applicant-header>
+  <ng-view autoscroll="true" class="inner"></ng-view>
+</div>
+<state-loading-indicator></state-loading-indicator>
+<!-- Javascripts Area-->
+<script src="angular.js"></script>
+<script src="angular-route.js"></script>
+<script src="angular-resource.js"></script>
+<script src="angular-cookies.js"></script>
+<script src="ng-file-upload.js"></script>
+<script src="ngMeta.min.js"></script>
+<script src="angular-scroll.js"></script>
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/semantic.min.js"></script>
+<script src="assets/js/accordion.js"></script>
+<script src="assets/js/form.min.js"></script>
+<script src="assets/js/swiper.min.js"></script>
+<script src="app/app.js"></script>
+<script src="app/config/config.js"></script>  
+<!-- controllers -->
+<script src="app/controllers/ResetpasswordController.js"></script>
+<script src="app/controllers/NewPasswordController.js"></script>
+<script src="app/controllers/PasswordChangedController.js"></script>
+<script src="app/controllers/HomepageController.js"></script>
+<script src="app/controllers/ContactController.js"></script>
+<script src="app/controllers/PartnersController.js"></script>
+<script src="app/controllers/StepOneController.js"></script>
+<script src="app/controllers/StepTwoController.js"></script>
+<script src="app/controllers/receivedController.js"></script>
+<!-- routes -->
+<script src="app/routes/routes.js"></script>
+
+</body>
+</html>

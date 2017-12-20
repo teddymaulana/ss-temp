@@ -1,0 +1,71 @@
+
+<div class="wrapper signup" ng-init="setBackground(false); setHeader('applicant');">
+	<div class="ui grid computer mobile tablet only">
+ 	<div class="sixteen wide centered column" style="padding: 0">
+ 		<div class="ui fluid steps mag-steps">
+ 			
+ 		</div>
+ 	</div>
+ </div>
+ <div class="ui grid mobile tablet only mag-steps">
+ 	
+ </div>
+ <div class="ui grid">
+ 	<div class="row">
+ 		<div class="fifteen wide mobile fifteen wide tablet sixteen wide computer centered column">
+ 			<div class="ui segments mag-segments">
+ 				<div class="ui segment top mag-segment">
+ 					<div class="ui doubling stackable two column grid aligned center centered">
+ 						
+ 						<div class="ten wide column">
+ 							<div class="ui form mag-form ">
+ 								<div class="form-title">
+ 									<h1 class="title">Create New Account</h1>
+ 								</div>
+ 								<form name="registrationForm" >
+ 									<div class="fields">
+ 										<div class="sixteen wide required field">
+ 											<label>What kind of device do you have? *</label>
+ 											<p>Use the Promo mobile application to manage your business, website, and promotions.</p>
+ 											<div class="button-selection">
+ 												<a href="javascript:void(0)" class="button mag-button" ng-click="chooseDevice('android')" ng-class="{'selected': android}"><i class="android icon"></i> Android</a>
+ 												<a href="javascript:void(0)" class="button mag-button" ng-click="chooseDevice('ios')" ng-class="{'selected': ios}"><i class="apple icon"></i> iOS Device</a>
+ 											</div>
+ 										</div>
+ 									</div>
+ 									<div class="fields">
+ 										<div class="sixteen wide required field" id="website" ng-class="{'error': registrationForm.website.$error && !registrationForm.website.$valid && submitted}">
+ 											<label>Does Your Business Have an Existing Website? *</label>
+ 											<p>Use the Promo mobile application to manage your business, website, and promotions.</p>
+ 											
+											<div ng-messages="registrationForm.website.$error" class="active error-msg" ng-show="submitted && !registrationForm.website.$valid">
+ 												<div ng-message="required" ng-show="registrationForm.website.$error.required">Please to select an answer</div>
+ 											</div>
+ 											<div class="ui selection website dropdown">
+ 												<input type="hidden" name="website" ng-model="business.website" required id="website"  ng-change="removeValidate()">
+ 												<i class="dropdown icon"></i>
+ 												<div class="default text" ng-class="{'selected': business.website}">{{business.website || "Please choose one"}}</div>
+ 												<div class="menu">
+ 													<div ng-repeat="(key, web) in website" ng-class="{active: business.website == web}" class="item" data-value="{{key}}">{{web}}</div>
+ 												</div>
+ 											</div>
+ 											<div ng-messages="businessForm.website.$error" class="active error-msg" ng-show="submitted && !businessForm.website.$valid">
+ 												<div ng-message="required" ng-show="businessForm.website.$error.required">Please select an answer.</div>
+ 											</div>
+ 										</div>
+
+ 									</div>
+ 									
+ 								</form>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 				<div class="ui right aligned segment bottom mag-segment">
+ 					<button ng-click="submit()" ng-class="{'disabled':  processing && registrationForm.$valid}"  class="ui primary button mag-button" id="step1Next">Next</button>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+</div>

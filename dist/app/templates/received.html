@@ -1,0 +1,45 @@
+<div class="wrapper signup" ng-init="setBackground(false); setHeader('applicant');">
+  <div class="ui grid computer mobile tablet only">
+    <div class="sixteen wide centered column" style="padding: 0">
+      <div class="ui fluid steps mag-steps">
+        
+      </div>
+    </div>
+  </div>
+  <div class="ui grid mobile tablet only mag-steps">
+    
+  </div>
+  <div class="ui grid ">
+      <div class="fifteen wide mobile fifteen wide tablet sixteen wide computer centered column">
+      <div class="ui segments mag-segments">
+        <div class="ui segment top mag-segment">
+          <div ng-if="userDevice == 'ios'" class="ui doubling stackable two column grid">
+            <div class="seven wide column">
+              <img class="ui fluid centered personal-info " src="assets/images/ios-notif.png"></img>
+            </div>
+            <div class="nine wide column">
+              <div class="ui form mag-form  mag-text">
+                <h1 class="title">Please Check Your Email!</h1>
+                <p>Congratulations, your promo account is created! Please check your email account to verify your account and to complete the next steps in the registration process. Thanks!</p>
+              </div>
+            </div>
+          </div>
+          <div ng-if="userDevice == 'android'" class="ui doubling stackable two column grid">
+            <div class="seven wide column  ">
+              <img class="ui fluid centered personal-info image" src="assets/images/android-notif.png"></img>
+            </div>
+            <div class="nine wide column">
+              <div class="ui form mag-form mag-text">
+                <h1 class="title">Android Application Coming Soon!</h1>
+                <p>We’re working on bringing Promo to Android. We have added your email address to our database and will contact you the moment it becomes available. If you have an iOS device, you can start using Promo today.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui right aligned segment bottom mag-segment">
+          <button class="ui primary button mag-button" id="backToHome" ng-click="goHome()">Back to Homepage</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

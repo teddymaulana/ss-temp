@@ -1,0 +1,642 @@
+
+@font-face {
+  font-family: 'Muli';
+  src: url("/assets/fonts/glyphicons/Muli-Regular.ttf");
+}
+@font-face {
+  font-family: 'Muli-Bold';
+  src: url("/assets/fonts/glyphicons/Muli-Black.ttf");
+}
+@font-face {
+  font-family: 'Muli-Light';
+  src: url("/assets/fonts/glyphicons/Muli-Light.ttf");
+}
+@font-face {
+  font-family: 'Muli-Black';
+  src: url("/assets/fonts/glyphicons/Muli-Black.ttf");
+}
+
+html, body, section, h1 {
+  font-family: 'Muli', sans-serif;
+} 
+
+section.partners-content, section.intro {
+  font-family: 'Muli', sans-serif;
+}
+
+
+/* PARTNER PAGE */
+
+section.partners-content {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+section.partners-content .hgroup h2 {
+  font-size: 31px;
+}
+.partners-content .hgroup {
+  text-align: left !important;
+
+}
+.intro h1 {
+  font-family: 'Muli-Black' !important;
+  font-size: 45px;
+}
+.intro h2 {
+  font-size: 25px;
+  margin-top: 20px;
+}
+.wrapper .hgroup h1 {
+  font-weight: 900;
+  font-size: 28px;
+}
+.wrapper .hgroup h2 {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+#how-it-works {
+  margin-top:0;
+}
+.feature.first {
+  margin:0 !important;
+}
+#cta {
+  background: #364a5e !important;
+}
+#cta h1 {
+  font-size: 28px;
+}
+#cta .btn-primary, .intro .btn-primary {
+  width: 165px;
+  font-size: 14px;
+  font-family: 'Muli-Black';
+  margin-top:30px;
+  font-weight: 900;
+  letter-spacing: 1.3px;
+}
+
+.navbar-inverse {
+  background:#fff;
+}
+.navbar-inverse {
+  height:64px;
+  transition:  all 0.3s ease;
+}
+.navbar-inverse.active {
+  height: 46px;
+  transition:  all 0.3s ease;
+}
+.navbar-inverse .nav-btn .btn-navbar {
+  transition:  all 0.3s ease;
+}
+.navbar-inverse.active .nav-btn .btn-navbar {
+  height: 35px;
+  padding: 7px 20px;
+  transition:  all 0.3s ease;
+  margin:5px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.9px;
+}
+.navbar-inverse .navbar-nav>li>a { 
+  transition:  all 0.3s ease;
+}
+.navbar-inverse.active .navbar-nav>li>a {
+  transition:  all 0.3s ease;
+  padding: 0.7em 1.5em;
+}
+.navbar-inverse .navbar-brand {
+  transition:  all 0.3s ease;
+}
+.navbar-inverse.active .navbar-brand {
+  padding:8px 21px;
+  transition:  all 0.3s ease;
+}
+.navbar-inverse .navbar-brand img {
+  transition:  all 0.3s ease;
+}
+.navbar-inverse.active .navbar-brand img {
+  height: 2em;
+  transition:  all 0.3s ease;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #00c5d6;
+}
+
+.navbar-inverse .navbar-nav>li>a, 
+.navbar-inverse .navbar-nav>li>a:focus {
+  color: #3c4b63;
+}
+.navbar-inverse .nav-btn .btn-navbar {
+  color: #fff;
+  height: 44px;
+  margin: 9px;
+  padding: 12px 20px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.9px;
+}
+.navbar-inverse .nav-btn .btn-navbar:hover,
+.navbar-inverse .nav-btn .btn-navbar:focus {
+  background-color: #00daeb;
+  color: #fff;
+} 
+.footer {
+    background-color: #f7f5f0 !important;
+    font-family: 'Muli', sans-serif !important;
+}
+.footer .page .row{
+  padding: 100px 0;
+}
+.footer ul {
+  list-style: none;
+  margin: 0 auto 35px;
+  padding: 0;
+  width: 400px;
+  height: 20px;
+}
+.footer li {
+  float: left;
+}
+.footer a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.86;
+  text-align: center;
+  color: #3c4b63;
+  margin: 0 20px;
+  font-weight: 600;
+}
+.footer span {
+  font-size: 12px;
+  color: #3c4b63;
+  margin-top: 37px;
+  width: 100%;
+}
+.footer .line {
+  border-top: solid 1px #d4dbea;
+}
+
+.intro {
+  background: #3c4b63;
+  text-align: left;
+  background-size: cover !important;
+}
+.intro .hgroup {
+  padding: 20em 1em 10em;
+}
+.intro .wp-header {
+  width: 700px;
+  height:500px;
+  position: absolute;
+  right:0;
+  bottom:50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.intro.wordpress {
+  
+}
+.intro.homepage .container.phone-bg {
+  background-image: url(/assets/images/home-bg-phone.png);
+}
+
+.intro .container.phone-bg {
+  background-repeat: no-repeat;
+  background-size: 300px; 
+  background-position: right bottom;
+}
+.intro .phone-bg {
+    position: absolute;
+    height:500px;
+    z-index: 9;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.promo-collection_  .hgroup {
+  padding-top:0 !important;
+}
+.promo-collection_ .hgroup h1 {
+  width: 460px;
+  margin: 0 auto 20px;
+}
+.promo-collection_ .seeother {
+  float: right;
+  margin-right: 15px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #33a0b1;
+}
+.promo-collection_ .arrow {
+  background:none;
+  border:none;
+  padding: 0;
+  font-size: 16px;
+}
+.product {
+  background-color: #fff;
+  border: solid 1px #dcdfe7;
+  margin-bottom: 20px;
+  height: 510px;
+}
+.product .acc {
+  width: 100%;
+  position: relative;
+  float: none;
+  padding: 9px 10px;
+}
+.product .acc .acc-content {
+  position: relative;
+}
+.product .acc .acc-img {
+  height: 28px;
+}
+.product .acc h5 {
+  margin-top: 8px;
+  margin-left: 10px;
+  display: inline;
+  position: absolute;
+  font-size: 14px;
+  color: #3c4b63;
+}
+.product .thumb {
+  height: 218px;
+  overflow: hidden;
+  position: relative;
+}
+.product .thumb img {
+  width: 100%;
+  transform: scale(1.3);
+}
+.product .pricebox {
+  padding: 12px 10px;
+  border-bottom: solid 1px #dbdfe7;
+}
+.product .pricebox span {
+  font-size: 14px;
+    font-weight: bold;
+}
+.product .forsale { color: #8395b2; }
+.product .price { float:right;color: #2b8fa1; }
+.product .sub { color: #8395b2; }
+
+.product .content {
+  padding: 15px 10px;
+  position: relative;
+  height: 200px;
+}
+.product .content h4 {
+  font-size: 14px;
+    font-weight: 900;
+    color: #3c4b63;
+} 
+.product .content p {
+  font-size: 14px;
+  color: #3c4b63;
+  margin-bottom: 40px;  
+} 
+.product .content .buy-btn {
+  bottom: 25px;
+  position: absolute;
+}
+.product .content .buy-btn .button {
+  font-size: 10px;
+}
+.buy-btn-btn {
+  background-color: #33a0b1 !important;
+  border:1px solid #33a0b1;
+  padding: 10px;
+  color: #fff;
+  border-radius: 3px;
+  margin-top: 100px;
+}
+.view-btn-btn {
+  border-radius: 3px;
+  border: solid 1px #8395b2;
+  color: #8395b2;
+  margin-left: 10px;
+  padding: 10px;
+}
+/* WORDPRESS PAGE */
+.text-center {
+  text-align: center;
+}
+.intro.wordpress .hgroup {
+  background-size: cover;
+}
+.intro.wordpress .btn {
+  margin-right: 15px;
+}
+.intro.wordpress .btn .play {
+  width: 0; 
+  height: 0; 
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 15px solid #fff;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+.content-intro h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #3c4b63;
+}
+.content-intro p {
+  font-size: 18px;
+  line-height: 1.44;
+  color: #54647f;
+}
+.content-intro a {
+  margin-top: 20px;
+}
+
+.intro-guide {
+  text-align: center;
+  margin-top: 156px;
+}
+.intro-guide h1 {
+  font-size: 39px;
+  font-weight: 900;
+  color: #414141;
+}
+.intro-guide h2 {
+  font-size: 28px;
+  color: #565555;
+}
+.wordpress-step .hgroup {
+  padding-top: 0px !important;
+}
+.wordpress-step .second-img {
+  max-width: 110% !important;
+  margin-left: -60px !important;
+}
+.wordpress-step h2 {
+  font-family: 'Proxima Nova Rg' !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  line-height: 1.35 !important;
+  color: #33a0b1;
+}
+
+.wordpress-step p {
+  font-size: 25px !important;
+  line-height: 1.2 ;
+  color: #404040;
+}
+
+.wordpress-fs .hgroup h3 {
+  font-size: 28px;
+  font-weight: 900;
+}
+.wordpress-fs .hgroup p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.wordpress-fs .well {
+  text-align: center;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #dbd7ce;
+  height: 240px;
+}
+.wordpress-fs .row img {
+  width: 85px;
+  display: inline-block;
+}
+.wordpress-fs .row h4 {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  color: #3c4b63;
+}
+.wordpress-fs .row p {
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  color: #8395b2;
+}
+.wordpress-fs.figure {
+  margin-top: 0;
+}
+.wordpress-fs .figure .hgroup {
+  padding-top:3em;
+}
+.wordpress-fs .container.dotted {
+  border-top:2px dotted #979797;
+}
+#how-it-works .nav-tabs>li a {
+  padding: 1em 2.5em .75em;
+}
+
+
+@media screen and (min-width: 1050px) {
+  .promo-collection_ .container {
+    width: 1000px;
+  }
+  .intro.homepage h2 {
+    width: 82%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .intro .wp-header {
+    width: 500px;
+  }
+  #how-it-works .nav-tabs>li a {
+    padding: 1em 1em .75em;
+    font-size: 14px;
+  }
+}
+.partners-content {
+  // background-image: url('/assets/images/partner-phone.png');
+}
+
+@media screen and (min-width: 992px) {
+  .partners-content .container .features .hgroup h2 {
+    font-size: 24px;
+  }
+  .partners-content .container .features .hgroup p {
+    font-size: 16px;
+  }
+  .wordpress-fs .list-tutorial {
+    width: 920px;
+  }
+  .intro.homepage .container {
+    width: 900px;
+  }
+  .intro.wordpress .container {
+    width: 900px;
+  }
+  .intro-guide h2 {
+    width: 80%;
+    margin: auto;
+  }
+  
+}
+@media (min-width: 768px) {
+  .figure {
+      margin: 50px 0px;
+  }
+
+ 
+}
+@media screen and (max-width: 992px) {
+  .intro .wp-header {
+    width: 400px;
+  }
+  .wordpress-fs .well {
+    height: 250px;
+  }
+}
+@media (max-width: 766px) { 
+  .home .intro {
+    height: 880px;
+  }
+  .intro .container.phone-bg {
+    background-position: center bottom;
+    background-size: 250px !important;
+  }
+  
+}
+@media (max-width: 768px) {
+  .intro .wp-header {
+    width: 440px;
+  }
+  .intro.wordpress {
+    padding-bottom: 200px;
+  }
+
+  .partners-content {
+    background-image: none !important;
+  }
+  
+  .intro.wordpress .hgroup {
+    padding: 10em 1em 8em;
+  }
+  .intro .hgroup {
+    vertical-align: top;
+  }
+  .intro .hgroup {
+    padding: 10em 1em 10em;
+  }
+  .intro .hgroup h1 {
+    font-size: 32px;
+  }
+  
+  .promo-collection_ .hgroup h1 {
+    width: auto;
+  }
+  .footer ul {
+    width: 200px;
+    margin: 0 auto 75px;
+  }
+  .footer li {
+    float: none;
+  }
+  .footer .page .row {
+    padding: 80px 0;
+  }
+  .intro-guide h1 {
+    font-size: 30px !important;
+  }
+  .intro-guide h2 {
+    font-size: 20px !important;
+  }
+  .wordpress-step p {
+    font-size: 16px !important;
+  }
+  .wordpress-step.container .features .feature {
+    margin-top:0 !important;
+  }
+  .wordpress-step .second-img {
+    margin-left: -30px !important;
+  }
+  
+  #how-it-works > .hgroup h2 {
+     padding: 0px 80px; 
+  }
+  #cta {
+    margin: 0;
+  }
+
+}
+@media (max-width:768px) and (min-width:378px) {
+  .product .thumb {
+    height: 178px;
+  }
+  .product {
+    height:530px;
+  }
+  .product .content {
+    height: 250px;
+  }
+  .figure .hgroup {
+    padding-top: 4em;
+  }
+  .figure:first-child .hgroup {
+    padding-top: 2em;
+  }
+}
+@media (max-width: 415px) {
+  #how-it-works > .hgroup h2 {
+     padding: 0px 0px; 
+  }
+  .intro .wp-header {
+    width: 250px;
+  }
+  .navbar-toggle {
+    line-height: 0 !important;
+  }
+  .navbar-toggle .icon-bar {
+    display: block !important;
+  }
+  .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #333;
+  }
+  .navbar.active .navbar-toggle {
+    height: 48px;
+    transition:  all 0.3s ease;
+  }
+  .navbar .navbar-toggle {
+    height: 58px;
+    transition:  all 0.3s ease;
+  }
+  .navbar-inverse {
+    height: 58px;
+  }
+  .navbar-inverse .nav-btn .btn-navbar, .navbar-inverse.active .nav-btn .btn-navbar {
+    margin: 10px 20px !important;
+  }
+  .navbar-collapse {
+    top: -3px;
+    position: relative;
+  }
+  .navbar-inverse .navbar-toggle:before {
+    color: transparent !important;
+  }
+  .container .nav-tabs {
+    padding: 20px 0px 0 75px;
+    text-align: left;
+  }
+}
+@media (max-width: 325px) {
+  .container .nav-tabs {
+    padding: 20px 0px 0 25px;
+    text-align: left;
+  }
+}
+
+.ui.menu.mag-menu {
+  height: 65px;
+}
+.ui.menu.mag-menu a {
+  height: 50px;
+  padding: 10px;
+}
+.ui.menu.mag-menu img {
+  width: 200px !important;
+}
